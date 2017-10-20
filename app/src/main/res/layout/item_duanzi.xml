@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/zanView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:src="@drawable/good"/>
+            <TextView
+                android:id="@+id/zanTv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_dimens"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="2.2万"
+                android:textColor="@color/text_icon_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/caiView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_toRightOf="@+id/zanView"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:src="@drawable/bad"/>
+            <TextView
+                android:id="@+id/caiTv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_dimens"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="2.2万"
+                android:textColor="@color/text_icon_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pingView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_toRightOf="@+id/caiView"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_dimens"
+                android:layout_height="@dimen/icon_dimens"
+                android:src="@drawable/comments"/>
+            <TextView
+                android:id="@+id/pingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_dimens"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="2.2万"
+                android:textColor="@color/text_icon_color"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favorView"
+            android:layout_width="@dimen/icon_dimens"
+            android:layout_height="@dimen/icon_dimens"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_toLeftOf="@+id/shareView"
+            android:src="@drawable/favorite"/>
+
+        <ImageView
+            android:id="@+id/shareView"
+            android:layout_width="@dimen/icon_dimens"
+            android:layout_height="@dimen/icon_dimens"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/skip"/>
+    </RelativeLayout>
+</LinearLayout>

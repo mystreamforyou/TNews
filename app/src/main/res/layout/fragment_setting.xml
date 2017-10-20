@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/grade"
+            style="@style/settingText"
+            android:text="@string/grade"
+        />
+
+        <View style="@style/Line.wrap"/>
+
+        <TextView
+            android:id="@+id/clean"
+            style="@style/settingText"
+            android:text="@string/clean"
+        />
+
+        <View style="@style/Line.wrap"/>
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/settingText"
+            android:text="@string/about"/>
+
+        <View style="@style/Line.Full"/>
+    </LinearLayout>
+
+</RelativeLayout>
